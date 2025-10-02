@@ -9,6 +9,6 @@ public class ifCetakKRS09 {
         if (uktLunas);
             System.out.println("Pembayaran UKT terverifikasi");
             System.out.println("Silakan Cetak KRS dan minta tanda tangan DPA");
-            
+                
     }
 }
