@@ -74,9 +74,9 @@ public class CM1_09 {
     } else {
       statusM2 = "Tidak Lulus";
     }
-
+    //menghitung nilai rata rata akhir
     double nilaiRataAkhir = (nAkhirMatkul1 + nAkhirMatkul2) / 2;
-
+    //jika keduanya berstatus lulus
     String statusAkhir;
     if (statusM1.equalsIgnoreCase("Lulus") && statusM2.equalsIgnoreCase("Lulus")) {
       if (nilaiRataAkhir >= 70) {
@@ -87,7 +87,7 @@ public class CM1_09 {
     } else {
       statusAkhir = "Tidak Lulus";
     }
-
+    //konversi menjadi nilai huruf dengan memanggil konversi nilai
     String nilaiHuruf1 = konversiNilai(nAkhirMatkul1);
     String nilaiHuruf2 = konversiNilai(nAkhirMatkul2);
 
@@ -96,7 +96,7 @@ public class CM1_09 {
     System.out.println("NIM  \t\t: " + NIM);
 
     System.out.println("---------------------------------------");
-
+    //output
     System.out.println("Mata kuliah 1 \t: Algoritma dan Pemrograman");
     System.out.println("Nilai Akhir   \t: " + df.format(nAkhirMatkul1));
     System.out.println("Nilai Huruf \t: " + nilaiHuruf1);
@@ -110,7 +110,6 @@ public class CM1_09 {
 
     System.out.println("Nilai Rata-rata Akhir \t: " + df.format(nilaiRataAkhir));
     System.out.println("Status Akhir \t\t: " + statusAkhir);
-    // outputt 
 
   }
 }
